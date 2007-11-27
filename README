@@ -1,0 +1,119 @@
+db4.6
+------------------------------------------
+Oracle Berkeley DB version 4.6
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  jamvm-1.4.5-1	(for Java bindings)
+  tcl-8.4.16-1	(for Tcl bindings)
+
+Build requirements:
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  binutils-20060817-1
+  cygport-0.3.7-1
+  fastjar-0.94-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  jamvm-1.4.5-1
+  jikes-1.22-3
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  sed-4.1.5-2
+  tcl-8.4.16-1
+
+Canonical website:
+  http://www.oracle.com/technology/products/berkeley-db/db/index.html
+
+Canonical download:
+  http://download.oracle.com/berkeley-db/
+
+-------------------------------------------
+
+Build instructions:
+  unpack db4.6-4.6.21-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./db4.6-4.6.21-X.cygport all
+
+This will create:
+  /usr/src/db4.6-4.6.21-X-src.tar.bz2
+  /usr/src/db4.6-4.6.21-X.tar.bz2
+  /usr/src/java-db4.6-4.6.21-X.tar.bz2
+  /usr/src/libdb4.6-4.6.21-X.tar.bz2
+  /usr/src/libdb4.6-devel-4.6.21-X.tar.bz2
+  /usr/src/tcl-db4.6-4.6.21-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(db4.6)
+  /usr/bin/db4.6_archive.exe
+  /usr/bin/db4.6_checkpoint.exe
+  /usr/bin/db4.6_codegen.exe
+  /usr/bin/db4.6_deadlock.exe
+  /usr/bin/db4.6_dump.exe
+  /usr/bin/db4.6_hotbackup.exe
+  /usr/bin/db4.6_load.exe
+  /usr/bin/db4.6_printlog.exe
+  /usr/bin/db4.6_recover.exe
+  /usr/bin/db4.6_stat.exe
+  /usr/bin/db4.6_upgrade.exe
+  /usr/bin/db4.6_verify.exe
+  /usr/share/doc/Cygwin/db4.6-4.6.21.README
+  /usr/share/doc/db4.6-4.6.21/LICENSE
+  /usr/share/doc/db4.6-4.6.21/README
+
+(libdb4.6)
+  /usr/bin/cygdb-4.6.dll
+  /usr/bin/cygdb_cxx-4.6.dll
+
+(java-db4.6)
+  /etc/postinstall/java-db4.6.sh
+  /etc/preremove/java-db4.6.sh
+  /usr/bin/cygdb_java-4.6.dll
+  /usr/share/java/db-4.6.jar
+
+(tcl-db4.6)
+  /usr/lib/tcl8.4/db4.6/cygdb_tcl-4.6.dll
+  /usr/lib/tcl8.4/db4.6/pkgIndex.tcl
+
+(libdb4.6-devel)
+  /etc/postinstall/libdb4.6-devel.sh
+  /etc/preremove/libdb4.6-devel.sh
+  /usr/include/db4.6/db.h
+  /usr/include/db4.6/db_185.h
+  /usr/include/db4.6/db_cxx.h
+  /usr/lib/libdb-4.6.a
+  /usr/lib/libdb-4.6.dll.a
+  /usr/lib/libdb-4.6.la
+  /usr/lib/libdb_cxx-4.6.a
+  /usr/lib/libdb_cxx-4.6.dll.a
+  /usr/lib/libdb_cxx-4.6.la
+  /usr/lib/libdb_java-4.6.la
+  /usr/share/doc/db4.6-4.6.21/html/api_c/*
+  /usr/share/doc/db4.6-4.6.21/html/api_cxx/*
+  /usr/share/doc/db4.6-4.6.21/html/api_tcl/*
+  /usr/share/doc/db4.6-4.6.21/html/collections/tutorial/*
+  /usr/share/doc/db4.6-4.6.21/html/gsg/C/*
+  /usr/share/doc/db4.6-4.6.21/html/gsg/CXX/*
+  /usr/share/doc/db4.6-4.6.21/html/gsg/JAVA/*
+  /usr/share/doc/db4.6-4.6.21/html/images/*
+  /usr/share/doc/db4.6-4.6.21/html/index.html
+  /usr/share/doc/db4.6-4.6.21/html/java/*
+  /usr/share/doc/db4.6-4.6.21/html/ref/*/*
+  /usr/share/doc/db4.6-4.6.21/html/utility/*
+
+------------------
+
+Port Notes:
+
+----- version 4.6.21-1 -----
+Initial release of 4.6 branch.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
