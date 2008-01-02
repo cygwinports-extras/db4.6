@@ -51,6 +51,8 @@ This will create:
 Files included in the binary packages:
 
 (db4.6)
+  /etc/postinstall/db4.6.sh
+  /etc/preremove/db4.6.sh
   /usr/bin/db4.6_archive.exe
   /usr/bin/db4.6_checkpoint.exe
   /usr/bin/db4.6_codegen.exe
@@ -110,6 +112,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 4.6.21-2 -----
+Fixed alternatives script.
 
 ----- version 4.6.21-1 -----
 Initial release of 4.6 branch.
