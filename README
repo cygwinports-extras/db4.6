@@ -3,25 +3,22 @@ db4.6
 Oracle Berkeley DB version 4.6
 
 Runtime requirements:
-  cygwin-1.5.24-2
+  cygwin-1.5.25-7
   jamvm-1.4.5-1	(for Java bindings)
-  tcl-8.4.16-1	(for Tcl bindings)
+  tcl-8.4.16-2	(for Tcl bindings)
 
-Build requirements:
-  cygwin-1.5.24-2
+Additional build requirements:
   autoconf2.5-2.61-1
   binutils-20060817-1
-  cygport-0.3.7-1
+  cygport-0.3.9-1
   fastjar-0.94-1
-  gawk-3.1.5-4
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
-  jamvm-1.4.5-1
   jikes-1.22-3
-  libtool1.5-1.5.23a-2
+  libtool-2.2.2-2
   make-3.81-1
   sed-4.1.5-2
-  tcl-8.4.16-1
 
 Canonical website:
   http://www.oracle.com/technology/products/berkeley-db/db/index.html
@@ -32,19 +29,19 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack db4.6-4.6.21-X-src.tar.bz2
+  unpack db4.6-4.6.21.1-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./db4.6-4.6.21-X.cygport all
+  cygport ./db4.6-4.6.21.1-X.cygport all
 
 This will create:
-  /usr/src/db4.6-4.6.21-X-src.tar.bz2
-  /usr/src/db4.6-4.6.21-X.tar.bz2
-  /usr/src/java-db4.6-4.6.21-X.tar.bz2
-  /usr/src/libdb4.6-4.6.21-X.tar.bz2
-  /usr/src/libdb4.6-devel-4.6.21-X.tar.bz2
-  /usr/src/tcl-db4.6-4.6.21-X.tar.bz2
+  /usr/src/db4.6-4.6.21.1-X-src.tar.bz2
+  /usr/src/db4.6-4.6.21.1-X.tar.bz2
+  /usr/src/java-db4.6-4.6.21.1-X.tar.bz2
+  /usr/src/libdb4.6-4.6.21.1-X.tar.bz2
+  /usr/src/libdb4.6-devel-4.6.21.1-X.tar.bz2
+  /usr/src/tcl-db4.6-4.6.21.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -65,9 +62,9 @@ Files included in the binary packages:
   /usr/bin/db4.6_stat.exe
   /usr/bin/db4.6_upgrade.exe
   /usr/bin/db4.6_verify.exe
-  /usr/share/doc/Cygwin/db4.6-4.6.21.README
-  /usr/share/doc/db4.6-4.6.21/LICENSE
-  /usr/share/doc/db4.6-4.6.21/README
+  /usr/share/doc/Cygwin/db4.6-4.6.21.1.README
+  /usr/share/doc/db4.6-4.6.21.1/LICENSE
+  /usr/share/doc/db4.6-4.6.21.1/README
 
 (libdb4.6)
   /usr/bin/cygdb-4.6.dll
@@ -96,22 +93,25 @@ Files included in the binary packages:
   /usr/lib/libdb_cxx-4.6.dll.a
   /usr/lib/libdb_cxx-4.6.la
   /usr/lib/libdb_java-4.6.la
-  /usr/share/doc/db4.6-4.6.21/html/api_c/*
-  /usr/share/doc/db4.6-4.6.21/html/api_cxx/*
-  /usr/share/doc/db4.6-4.6.21/html/api_tcl/*
-  /usr/share/doc/db4.6-4.6.21/html/collections/tutorial/*
-  /usr/share/doc/db4.6-4.6.21/html/gsg/C/*
-  /usr/share/doc/db4.6-4.6.21/html/gsg/CXX/*
-  /usr/share/doc/db4.6-4.6.21/html/gsg/JAVA/*
-  /usr/share/doc/db4.6-4.6.21/html/images/*
-  /usr/share/doc/db4.6-4.6.21/html/index.html
-  /usr/share/doc/db4.6-4.6.21/html/java/*
-  /usr/share/doc/db4.6-4.6.21/html/ref/*/*
-  /usr/share/doc/db4.6-4.6.21/html/utility/*
+  /usr/share/doc/db4.6-4.6.21.1/html/api_c/*
+  /usr/share/doc/db4.6-4.6.21.1/html/api_cxx/*
+  /usr/share/doc/db4.6-4.6.21.1/html/api_tcl/*
+  /usr/share/doc/db4.6-4.6.21.1/html/collections/tutorial/*
+  /usr/share/doc/db4.6-4.6.21.1/html/gsg/C/*
+  /usr/share/doc/db4.6-4.6.21.1/html/gsg/CXX/*
+  /usr/share/doc/db4.6-4.6.21.1/html/gsg/JAVA/*
+  /usr/share/doc/db4.6-4.6.21.1/html/images/*
+  /usr/share/doc/db4.6-4.6.21.1/html/index.html
+  /usr/share/doc/db4.6-4.6.21.1/html/java/*
+  /usr/share/doc/db4.6-4.6.21.1/html/ref/*/*
+  /usr/share/doc/db4.6-4.6.21.1/html/utility/*
 
 ------------------
 
 Port Notes:
+
+----- version 4.6.21.1-1 -----
+Include patch 1.
 
 ----- version 4.6.21-2 -----
 Fixed alternatives script.
