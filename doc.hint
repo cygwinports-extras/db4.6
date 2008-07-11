@@ -1,7 +1,6 @@
-category: Database Java
-requires: cygwin classpath jamvm libdb4.6
+category: Database Doc
 external-source: db4.6
-sdesc: "Berkeley DB 4.6 (Java interface)"
+sdesc: "Berkeley DB 4.6 (documentation)"
 ldesc: "Oracle Berkeley DB is the industry-leading open source, embeddable
 database engine that provides developers with fast, reliable, local
 persistence with zero administration. Oracle Berkeley DB is a library

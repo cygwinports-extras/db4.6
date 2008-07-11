@@ -10,7 +10,7 @@ Runtime requirements:
 Additional build requirements:
   autoconf2.5-2.61-1
   binutils-20080523-2
-  cygport-0.3.12-1
+  cygport-0.3.13-1
   fastjar-0.94-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
@@ -38,6 +38,7 @@ Build instructions:
 This will create:
   /usr/src/db4.6-4.6.21.2-X-src.tar.bz2
   /usr/src/db4.6-4.6.21.2-X.tar.bz2
+  /usr/src/db4.6-doc-4.6.21.2-X.tar.bz2
   /usr/src/java-db4.6-4.6.21.2-X.tar.bz2
   /usr/src/libdb4.6-4.6.21.2-X.tar.bz2
   /usr/src/libdb4.6-devel-4.6.21.2-X.tar.bz2
@@ -48,8 +49,6 @@ This will create:
 Files included in the binary packages:
 
 (db4.6)
-  /etc/postinstall/db4.6.sh
-  /etc/preremove/db4.6.sh
   /usr/bin/db4.6_archive.exe
   /usr/bin/db4.6_checkpoint.exe
   /usr/bin/db4.6_codegen.exe
@@ -70,8 +69,6 @@ Files included in the binary packages:
   /usr/bin/cygdb_cxx-4.6.dll
 
 (java-db4.6)
-  /etc/postinstall/java-db4.6.sh
-  /etc/preremove/java-db4.6.sh
   /usr/bin/cygdb_java-4.6.dll
   /usr/share/java/db-4.6.jar
 
@@ -92,6 +89,8 @@ Files included in the binary packages:
   /usr/lib/libdb_cxx-4.6.dll.a
   /usr/lib/libdb_cxx-4.6.la
   /usr/lib/libdb_java-4.6.la
+
+(db4.6-doc)
   /usr/share/doc/db4.6-4.6.21.2/html/api_c/*
   /usr/share/doc/db4.6-4.6.21.2/html/api_cxx/*
   /usr/share/doc/db4.6-4.6.21.2/html/api_tcl/*
