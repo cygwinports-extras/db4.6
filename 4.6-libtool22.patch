@@ -1,0 +1,10 @@
+--- origsrc/db-4.6.21/dist/configure.ac	2007-05-08 16:16:46.000000000 -0500
++++ src/db-4.6.21/dist/configure.ac	2009-03-15 12:19:49.718750000 -0500
+@@ -319,6 +319,7 @@ CCC=CXX
+ 
+ # Libtool configuration.
+ AC_PROG_LIBTOOL
++m4_ifdef([LT_OUTPUT], [LT_OUTPUT])
+ 
+ SOFLAGS="-rpath \$(libdir)"
+ LIBTOOL_PROG="${SHELL} ./libtool"

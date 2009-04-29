@@ -1,0 +1,4 @@
+inherit tcl berkdb
+
+PATCH_URI+=" 4.6-tcl.patch
+             4.6-libtool22.patch"
